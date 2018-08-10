@@ -10,12 +10,18 @@
 </head>
 <body>
 
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand" height="38">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="http://img.4plebs.org/boards/tg/image/1432/08/1432088142697.png" alt="James Newell" width="38">
+      </a>
 
-
-  <nav class="start" role="navigation" aria-label="main navigation" id="nav">
-    <a class="navbar-item" href="#">
-      <img src="http://img.4plebs.org/boards/tg/image/1432/08/1432088142697.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-    </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
     <div class="navbar-end">
       <a href="#about-me" class="navbar-item">About Me</a>
       <a href="#portfolio" class="navbar-item">Portfolio</a>
@@ -25,11 +31,11 @@
   </nav>
   <section class="section">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg/2880px-Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg"
-     alt="Mountains"/>
+    alt="Mountains"/>
   </section>
   <section class="section" id="about-me">
     <div class="container">
-      <h1 class="title">James Edward Newell</h1>
+      <h1 class="title shimmer">James Edward Newell</h1>
       <h2 class="subtitle">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </h2>
@@ -38,25 +44,67 @@
   <section class="section" id="portfolio">
     <div class="container">
       <h1 class="title">Portfolio</h1>
-      <h2 class="subtitle">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </h2>
+      <div class="columns">
+        <div class="column is-half">
+          <h1 class="title"><a href="#">Project 1 – JavaScript Game – Minesweeper</a></h1>
+          <a href="www.github.com/JamesENewell/project-1-wdi">Github</a>
+          <img src="http://minesweeperonline.com/og_image.jpg" alt="Frog"/>
+        </div>
+        <div class="column is-half">
+          <h1 class="title"><a href="www.pub-reviewer.herokuapp.com/">Project 2 – Express Full Stack Application – PubReviewer</a></h1>
+          <a href="www.github.com/JamesENewell/project-2-wdi">Github</a>
+          <img src="https://cdn-b.william-reed.com/var/wrbm_gb_hospitality/storage/images/publications/hospitality/morningadvertiser.co.uk/article/2017/09/12/tripadvisor-review-better-service-being-mugged-than-manchester-pub/2626950-2-eng-GB/TripAdvisor-review-better-service-being-mugged-than-Manchester-pub_wrbm_large.jpg" alt="Frog"/>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-half">
+          <h1 class="title"><a href="www.plan-your-night.herokuapp.com">Project 3 – Group Project - Mean stack Application - Plan Your Night</a></h1>
+          <a href="www.github.com/JamesENewell/project-3-wdi">Github</a>
+          <img src="https://dbestcasino.com/sites/default/files/slot-gallery/a-night-out-slot.jpg" alt="Frog"/>
+        </div>
+        <div class="column is-half">
+          <h1 class="title"><a href="www.developers-code-shop.herokuapp.com">Project 4 – Group Project - Mern stack Application - Developers Code Shop</a></h1>
+          <a href="www. github.com/JamesENewell/project-4-wdi">Github</a>
+          <img src="https://www.developersground.com/wp-content/uploads/2018/02/first-php-code.jpg" alt="Frog"/>
+        </div>
+      </div>
     </div>
   </section>
   <section class="section" id="interests">
     <div class="container">
       <h1 class="title">Interests</h1>
-      <h2 class="subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </h2>
+      <div class="columns">
+        <div class="column is-half">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="column is-half">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-half">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="column is-half">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="section" id="contact">
     <div class="container">
       <h1 class="title">Contact Details</h1>
-      <h2 class="subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </h2>
+      <div class="columns">
+        <div class="column is-third">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="column is-third">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="column is-third">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
     </div>
   </section>
 
