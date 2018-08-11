@@ -15,7 +15,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation-name: shimmer;
-  -webkit-animation-duration: 3.2s;
+  -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-background-size: 4rem 100%; /*50px*/
 
@@ -23,19 +23,7 @@ body {
 
 @-webkit-keyframes shimmer {
     0% {
-        background-position: 0 top;
-    }
-
-    25% {
-        background-position: 5rem top;
-    }
-
-    50% {
-        background-position: 10rem top;
-    }
-
-    75% {
-        background-position: 15rem top;
+        background-position: -4rem top;
     }
 
     100% {
