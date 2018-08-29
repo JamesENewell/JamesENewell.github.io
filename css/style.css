@@ -1,3 +1,8 @@
+* {
+  border: solid 1px black;
+
+}
+
 body {
   /* background: #333; */
   font-family: 'Lato', sans-serif;
@@ -29,4 +34,12 @@ body {
     100% {
         background-position: 20rem top; /*200px*/
     }
+}
+
+.contact {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #d9d9d9;
 }
