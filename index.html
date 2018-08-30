@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>James E Newell Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,6 +41,7 @@
   </section>
   <section class="section" id="about-me">
     <div class="container">
+      <h1 class="sectionTitle">About Myself</h1>
       <h2 class="subtitle">
         So a little about myself. I'm a recent graduate of General Assemblys' WDI course and have an intense passion for Web Development. All my life I’ve been surrounded by friends and family working in education, an interest I also share, so I followed in their track and became a swimming teacher. During my spare time, I became interested in coding, using chrome dev tools to view the very code behind my favourite websites.
         When I saw an advert for General Assembly and their WDI course, it sparked my curiosity and I quickly noticed similarities between teaching and coding such as creating a basic code on the computer could be seen as similar as using the basic functions of the swimming strokes and then refactoring and refining a child’s ability to swim. Whilst enjoying my time as a swimming teacher, the coding industry excited me and I became engrossed in developing my problem solving and logical thinking skills through creating and customising websites. I am driven by challenges and the quickly evolving coding industry has captured my interest and this is why I joined this 3-month immersive to satisfy my desire to know more.
@@ -47,17 +51,19 @@
   </section>
   <section class="section" id="portfolio">
     <div class="container">
-      <h1 class="title">Portfolio</h1>
+      <h1 class="sectionTitle">Portfolio</h1>
       <div class="columns">
         <div class="column is-half project">
           <h1 class="title">Project 1 – JavaScript Game – Minesweeper</h1>
-          <a href="https://www.github.com/JamesENewell/project-1-wdi" target="_blank">Github</a>
+          <a class="projectLink" href="https://www.github.com/JamesENewell/project-1-wdi" target="_blank">Github Code</a>
           <p>A simple JavaScript game, replicating the old classic Minesweeper.</p>
+          <figure class="image is-3by2">
           <img class="projectImage" src="https://imgur.com/P24oHfd.jpg" alt="Minesweeper"/>
+          </figure>
         </div>
         <div class="column is-half project">
           <h1 class="title"><a href="https://pub-reviewer.herokuapp.com/" target="_blank">Project 2 – Express Full Stack Application – PubReviewer</a></h1>
-          <a href="https://www.github.com/JamesENewell/project-2-wdi" target="_blank">Github</a>
+          <a class="projectLink" href="https://www.github.com/JamesENewell/project-2-wdi" target="_blank">Github Code</a>
           <p>First full stack application using JQuery and MongoDB as a host for user information.</p>
           <figure class="image is-3by2">
             <img class="projectImage" src="https://imgur.com/2NMur3o.jpg" alt="Pub"/>
@@ -67,22 +73,26 @@
       <div class="columns">
         <div class="column is-half project">
           <h1 class="title"><a href="https://plan-your-night.herokuapp.com/" target="_blank">Project 3 – Group Project - MEAN stack Application - Plan Your Night</a></h1>
-          <a href="https://www.github.com/JamesENewell/project-3-wdi" target="_blank">Github</a>
+          <a class="projectLink" href="https://www.github.com/JamesENewell/project-3-wdi" target="_blank">Github Code</a>
           <p>A team project with split responsibilities to showcase our teamwork skills</p>
+          <figure class="image is-3by2">
           <img class="projectImage" src="https://i.imgur.com/achGguo.gif" alt="Night Out"/>
+          </figure>
         </div>
         <div class="column is-half project">
           <h1 class="title"><a href="https://developers-code-shop.herokuapp.com/" target="_blank">Project 4 – Group Project - MERN stack Application - Developers Code Shop</a></h1>
-          <a href="https://www.github.com/JamesENewell/project-4-wdi" target="_blank">Github</a>
+          <a class="projectLink" href="https://www.github.com/JamesENewell/project-4-wdi" target="_blank">Github Code</a>
           <p>Final WDI Project using React.JS</p>
+          <figure class="image is-3by2">
           <img class="projectImage" src="https://imgur.com/WGfYaqU.jpg" alt="Code"/>
+          </figure>
         </div>
       </div>
     </div>
   </section>
   <section class="section" id="interests">
     <div class="container">
-      <h1 class="title">Interests</h1>
+      <h1 class="sectionTitle">Interests</h1>
       <div class="columns">
         <div class="column is-quarter">
           <h2 class="subtitle"><a href="https://www.brewdog.com/equityforpunks" target="_blank">Brewdog</a></h2>
@@ -90,7 +100,7 @@
         </div>
         <div class="column is-quarter"
         <figure class="image is-square">
-          <img src="https://www.brewdog.com/files/1440777268BREWDOGLOGO.jpg">
+          <img class="interest" src="https://www.brewdog.com/files/1440777268BREWDOGLOGO.jpg">
         </figure>
       </div>
       <div class="column is-quarter">
@@ -99,7 +109,7 @@
       </div>
       <div class="column is-quarter">
         <figure class="image is-square">
-          <img src="https://pbs.twimg.com/profile_images/3149593769/8bdeb13626c963b4b27930fa7f032b4f_400x400.jpeg">
+          <img class="interest" src="https://pbs.twimg.com/profile_images/3149593769/8bdeb13626c963b4b27930fa7f032b4f_400x400.jpeg">
         </figure>
 
       </div>
@@ -111,7 +121,7 @@
       </div>
       <div class="column is-quarter">
         <figure class="image is-square">
-          <img src="https://imgur.com/E5u6Kik.jpg">
+          <img class="interest" src="https://imgur.com/E5u6Kik.jpg">
         </figure>
       </div>
       <div class="column is-quarter">
@@ -120,15 +130,48 @@
       </div>
       <div class="column is-quarter">
         <figure class="image is-square">
-          <img src="https://www.vintagefootballshirts.com/uploads/teams/images/chelsea-113.png">
+          <img class="interest" src="https://www.vintagefootballshirts.com/uploads/teams/images/chelsea-113.png">
         </figure>
       </div>
     </div>
   </div>
 </section>
+<section class="section" id="skills">
+      <div class="container">
+        <h1 class="sectionTitle">Skills</h1>
+        <h2 class="sectionSubtitle">Proficient</h2>
+        <i class="devicon-angularjs-plain-wordmark colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-jquery-plain-wordmark colored"></i>
+        <i class="devicon-github-plain-wordmark colored"></i>
+        <i class="devicon-slack-plain-wordmark colored"></i>
+        <i class="devicon-photoshop-line colored"></i>
+        <h2 class="sectionSubtitle">Intermediate</h2>
+        <i class="devicon-react-original-wordmark colored"></i>
+        <i class="devicon-trello-plain-wordmark colored"></i>
+        <i class="devicon-express-original-wordmark colored"></i>
+        <i class="devicon-git-plain-wordmark colored"></i>
+        <i class="devicon-nodejs-plain colored"></i>
+        <h2 class="sectionSubtitle">Novice</h2>
+        <i class="devicon-vuejs-line-wordmark colored"></i>
+        <i class="devicon-mongodb-plain-wordmark colored"></i>
+        <i class="devicon-mocha-plain colored"></i>
+        <h2 class="sectionSubtitle">Fundamentals</h2>
+        <i class="devicon-webpack-plain-wordmark colored"></i>
+        <i class="devicon-sass-original colored"></i>
+        <i class="devicon-heroku-plain-wordmark colored"></i>
+          <h2 class="sectionSubtitle">Interested In Learning About</h2>
+        <i class="devicon-php-plain colored"></i>
+        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        <i class="devicon-laravel-plain-wordmark colored"></i>
+        <i class="devicon-wordpress-plain-wordmark colored"></i>
+      </div>
+</section>
 <section class="section" id="contact">
   <div class="container">
-    <h1 class="title">Contact Details</h1>
+    <h1 class="sectionTitle">Contact Details</h1>
     <div class="columns">
       <div class="column is-quarter">
         <h2 class="subtitle contact">
@@ -142,7 +185,7 @@
           </div>
           <div class="column is-quarter">
             <h2 class="subtitle contact">
-              <img class="icon" src="Linkedin Icon" alt="LinkedIn">
+              <img class="icon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt="LinkedIn">
               <a href="https://www.linkedin.com/in/jamesenewell" target="_blank">LinkedIn</a></h2>
             </div>
             <div class="column is-quarter">

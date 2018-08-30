@@ -6,24 +6,24 @@
 
 body {
   /* background: #333; */
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 1em;
 }
 
-h1.title {
+h1 {
+  font-family: 'Cinzel', sans-serif;
+}
+
+.title {
   text-align: center;
   text-decoration: underline;
 }
 
 .shimmer {
-  display: inline-block;
-  color:white;
-  font-size: 85px;
-  padding: inherit;
-
   background: #eed7b7 -webkit-gradient(linear, 100% 0, 0 0, from(#eed7b7), color-stop(0.5, #ffffff), to(#eed7b7));
 
   background-position: -4rem top; /*50px*/
+
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -31,6 +31,12 @@ h1.title {
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-background-size: 4rem 100%; /*50px*/
+
+
+  color:white;
+  display: inline-block;
+  font-size: 100px;
+  padding: inherit;
 
 }
 
@@ -74,8 +80,11 @@ a {
   border: solid 1px black;
 }
 
-h1.title {
+.sectionTitle {
   background-color: #d9d9d9;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 img.projectImage {
@@ -83,11 +92,31 @@ img.projectImage {
   max-height: 300px;
 }
 
-h1.shimmer {
+.shimmer {
   align-content: center !important;
 }
 
-section#Heading {
+#Heading {
   padding-bottom: 0;
+  padding-top: 80px;
 
+}
+
+.interest {
+  vertical-align: bottom;
+}
+
+.projectLink {
+  font-size: 30px;
+}
+
+i {
+font-size: 5rem;
+padding-left: 1px;
+padding-right: 1px;
+}
+
+.sectionSubtitle {
+  font-size: 20px;
+  padding: 10px 0 10px 0;
 }
