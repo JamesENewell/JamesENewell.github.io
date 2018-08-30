@@ -1,5 +1,6 @@
 * {
-  border: solid 1px black;
+  /* border: solid 1px black; */
+  text-decoration: none;
 
 }
 
@@ -9,11 +10,18 @@ body {
   padding: 1em;
 }
 
+h1.title {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .shimmer {
   display: inline-block;
   color:white;
+  font-size: 85px;
+  padding: inherit;
 
-  background: #acacac -webkit-gradient(linear, 100% 0, 0 0, from(#acacac), color-stop(0.5, #ffffff), to(#acacac));
+  background: #eed7b7 -webkit-gradient(linear, 100% 0, 0 0, from(#eed7b7), color-stop(0.5, #ffffff), to(#eed7b7));
 
   background-position: -4rem top; /*50px*/
   background-repeat: no-repeat;
@@ -32,7 +40,7 @@ body {
     }
 
     100% {
-        background-position: 20rem top; /*200px*/
+        background-position: 55rem top; /*200px*/
     }
 }
 
@@ -40,6 +48,46 @@ body {
   text-align: center;
 }
 
+a {
+  color: inherit;
+}
+
 .navbar {
+  background-color: #eed7b7;
+}
+
+.navbar-icon {
+  height: 40px !important;
+}
+
+.icon {
+  height: 32px;
+  vertical-align: middle;
+  width: 32px;
+}
+
+.project {
+  height: 510px;
+}
+
+.projectImage {
+  border: solid 1px black;
+}
+
+h1.title {
   background-color: #d9d9d9;
+}
+
+img.projectImage {
+  align-content: center;
+  max-height: 300px;
+}
+
+h1.shimmer {
+  align-content: center !important;
+}
+
+section#Heading {
+  padding-bottom: 0;
+
 }
