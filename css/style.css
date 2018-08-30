@@ -76,9 +76,7 @@ a {
   width: 32px;
 }
 
-.project {
-  height: 510px;
-}
+
 
 .projectImage {
   border: solid 1px black;
@@ -91,10 +89,10 @@ a {
   text-align: center;
 }
 
-img.projectImage {
+/* img.projectImage {
   align-content: center;
   max-height: 300px;
-}
+} */
 
 .shimmer {
   align-content: center !important;
@@ -107,7 +105,9 @@ img.projectImage {
 }
 
 .interest {
-  vertical-align: bottom;
+  align-content: center;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .projectLink {
@@ -122,5 +122,6 @@ padding-right: 1px;
 
 .sectionSubtitle {
   font-size: 20px;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
+  /* text-decoration: underline; */
 }
