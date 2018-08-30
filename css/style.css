@@ -46,7 +46,7 @@ h1 {
     }
 
     100% {
-        background-position: 55rem top; /*200px*/
+        background-position: 70rem top; /*200px*/
     }
 }
 
@@ -62,8 +62,12 @@ a {
   background-color: #eed7b7;
 }
 
+.navbar-brand {
+  height: 4rem;
+}
+
 .navbar-icon {
-  height: 40px !important;
+  height: 4rem;
 }
 
 .icon {
