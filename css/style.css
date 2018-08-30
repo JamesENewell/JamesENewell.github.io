@@ -1,6 +1,5 @@
 * {
   /* border: solid 1px black; */
-  text-decoration: none;
 
 }
 
@@ -10,8 +9,17 @@ body {
   padding: 1em;
 }
 
+p {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Cinzel', sans-serif;
+  /* padding: 0 10px 0 10px; */
+}
+
+h2 {
+  text-align: center;
 }
 
 .title {
@@ -70,13 +78,16 @@ a {
   height: 4rem;
 }
 
+.navbar-burger {
+  height: 4rem;
+}
+
+
 .icon {
   height: 32px;
   vertical-align: middle;
   width: 32px;
 }
-
-
 
 .projectImage {
   border: solid 1px black;
@@ -106,8 +117,8 @@ a {
 
 .interest {
   align-content: center;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 320px;
+  max-width: 320px;
 }
 
 .projectLink {
@@ -116,8 +127,8 @@ a {
 
 i {
 font-size: 5rem;
-padding-left: 1px;
-padding-right: 1px;
+padding-left: 2px;
+padding-right: 2px;
 }
 
 .sectionSubtitle {
