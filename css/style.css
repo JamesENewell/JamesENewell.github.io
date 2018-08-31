@@ -29,7 +29,7 @@ h4 {
 
 .title {
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .shimmer {
@@ -87,6 +87,10 @@ a {
   height: 4rem;
 }
 
+a.navbar-item {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .icon {
   height: 32px;
@@ -134,11 +138,15 @@ padding-right: 2px;
 .sectionSubtitle {
   font-size: 20px;
   padding: 20px 0 20px 0;
-  /* text-decoration: underline; */
+  text-align: left;
 }
 
 @media only screen and (max-width: 500px) {
     .shimmer {
         font-size: 50px;
+    }
+    .reverse {
+      display: flex;
+      flex-direction: column-reverse;
     }
 }
