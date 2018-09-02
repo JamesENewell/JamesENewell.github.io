@@ -114,13 +114,8 @@ a.navbar-item {
   text-align: center;
 }
 
-/* img.projectImage {
-  align-content: center;
-  max-height: 300px;
-} */
-
 .shimmer {
-  align-content: center !important;
+  align-content: center;
 }
 
 #Heading {
