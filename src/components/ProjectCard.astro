@@ -1,0 +1,136 @@
+---
+interface Props {
+	title: string;
+	summary: string;
+	tech: string[];
+	repo: string;
+	demo: string | null;
+	image: string;
+	imageAlt: string;
+	reversed?: boolean;
+}
+
+const { title, summary, tech, repo, demo, image, imageAlt, reversed = false } = Astro.props;
+---
+
+<article class:list={['project-card', { reversed }]}>
+	<div class="project-content">
+		<h3 class="project-title">{title}</h3>
+		<p class="project-summary">{summary}</p>
+		<ul class="tech-list" aria-label={`Technologies used in ${title}`}>
+			{tech.map((item) => <li>{item}</li>)}
+		</ul>
+		<div class="project-links">
+			<a href={repo} target="_blank" rel="noopener noreferrer">View source</a>
+			{demo ? (
+				<a href={demo} target="_blank" rel="noopener noreferrer">
+					Live demo
+				</a>
+			) : (
+				<span class="demo-offline">Demo offline</span>
+			)}
+		</div>
+	</div>
+	<figure class="project-image">
+		<img src={image} alt={imageAlt} loading="lazy" width="480" height="320" />
+	</figure>
+</article>
+
+<style>
+	.project-card {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 2rem;
+		align-items: center;
+		padding: 2rem 0;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.project-card:last-child {
+		border-bottom: none;
+	}
+
+	.project-card.reversed .project-content {
+		order: 2;
+	}
+
+	.project-card.reversed .project-image {
+		order: 1;
+	}
+
+	.project-title {
+		margin: 0 0 0.75rem;
+		font-size: 1.35rem;
+	}
+
+	.project-summary {
+		margin: 0 0 1rem;
+		color: var(--color-muted);
+	}
+
+	.tech-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		list-style: none;
+		margin: 0 0 1.25rem;
+		padding: 0;
+	}
+
+	.tech-list li {
+		background: #eef2ff;
+		color: #3730a3;
+		font-size: 0.85rem;
+		font-weight: 500;
+		padding: 0.25rem 0.65rem;
+		border-radius: 999px;
+	}
+
+	.project-links {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.project-links a {
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.project-links a:hover {
+		text-decoration: underline;
+	}
+
+	.demo-offline {
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.project-image {
+		margin: 0;
+		border-radius: var(--radius);
+		overflow: hidden;
+		box-shadow: var(--shadow);
+		background: var(--color-surface);
+	}
+
+	.project-image img {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+	}
+
+	@media (max-width: 768px) {
+		.project-card,
+		.project-card.reversed {
+			grid-template-columns: 1fr;
+		}
+
+		.project-card.reversed .project-content,
+		.project-card.reversed .project-image {
+			order: unset;
+		}
+	}
+</style>

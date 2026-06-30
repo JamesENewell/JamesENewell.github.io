@@ -1,0 +1,46 @@
+{
+	"name": "James Edward Newell",
+	"title": "Web Developer",
+	"tagline": "Building thoughtful web experiences with clean code and clear design.",
+	"profileImage": "/images/profile.jpg",
+	"bio": [
+		"I am a web developer with a background in education and a long-standing passion for building on the web. After years as a swimming teacher, I completed General Assembly's Web Development Immersive and have been growing my skills across the full stack ever since.",
+		"What drew me to development is the same thing that kept me in teaching: breaking down complex problems, refining solutions, and helping people achieve something tangible. I enjoy working in collaborative teams, shipping reliable software, and continuously learning as the industry evolves."
+	],
+	"skills": [
+		{
+			"category": "Languages",
+			"items": ["HTML", "CSS", "JavaScript", "TypeScript"]
+		},
+		{
+			"category": "Frameworks & Libraries",
+			"items": ["React", "Node.js", "Express", "Astro"]
+		},
+		{
+			"category": "Tools & Platforms",
+			"items": ["Git", "GitHub", "MongoDB", "npm", "VS Code"]
+		}
+	],
+	"contact": [
+		{
+			"label": "GitHub",
+			"url": "https://github.com/JamesENewell",
+			"icon": "github"
+		},
+		{
+			"label": "LinkedIn",
+			"url": "https://www.linkedin.com/in/jamesenewell",
+			"icon": "linkedin"
+		},
+		{
+			"label": "Twitter",
+			"url": "https://twitter.com/JamesENewell1",
+			"icon": "twitter"
+		},
+		{
+			"label": "Email",
+			"url": "mailto:jamesenewell91@gmail.com",
+			"icon": "email"
+		}
+	]
+}

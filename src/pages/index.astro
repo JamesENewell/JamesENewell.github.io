@@ -1,0 +1,290 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import site from '../data/site.json';
+import projects from '../data/projects.json';
+---
+
+<BaseLayout title={`${site.name} — ${site.title}`} description={site.tagline}>
+	<Navbar />
+
+	<main>
+		<section class="hero section" id="top">
+			<div class="container hero-grid">
+				<div class="hero-content">
+					<p class="eyebrow">{site.title}</p>
+					<h1>{site.name}</h1>
+					<p class="tagline">{site.tagline}</p>
+					<div class="hero-actions">
+						<a class="button primary" href="#projects">View projects</a>
+						<a class="button secondary" href="#contact">Get in touch</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img
+						src={site.profileImage}
+						alt="Portrait of James Edward Newell"
+						width="400"
+						height="400"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section class="section about" id="about">
+			<div class="container">
+				<h2 class="section-title">About</h2>
+				<div class="about-content">
+					{site.bio.map((paragraph) => <p>{paragraph}</p>)}
+				</div>
+			</div>
+		</section>
+
+		<section class="section projects" id="projects">
+			<div class="container">
+				<h2 class="section-title">Projects</h2>
+				<p class="section-subtitle">
+					Selected work from my development journey, from browser games to full-stack applications.
+				</p>
+				<div class="projects-list">
+					{
+						projects.map((project, index) => (
+							<ProjectCard {...project} reversed={index % 2 === 1} />
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="section skills" id="skills">
+			<div class="container">
+				<h2 class="section-title">Skills</h2>
+				<div class="skills-grid">
+					{
+						site.skills.map((group) => (
+							<div class="skill-group">
+								<h3>{group.category}</h3>
+								<ul>
+									{group.items.map((item) => (
+										<li>{item}</li>
+									))}
+								</ul>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="section contact" id="contact">
+			<div class="container">
+				<h2 class="section-title">Contact</h2>
+				<p class="section-subtitle">Open to opportunities, collaborations, and conversations about web development.</p>
+				<ul class="contact-list">
+					{
+						site.contact.map((item) => (
+							<li>
+								<a href={item.url} target={item.url.startsWith('mailto:') ? undefined : '_blank'} rel="noopener noreferrer">
+									{item.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; {new Date().getFullYear()} James Edward Newell</p>
+		</div>
+	</footer>
+</BaseLayout>
+
+<style>
+	.hero {
+		padding-top: 6rem;
+		padding-bottom: 4rem;
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+
+	.eyebrow {
+		color: var(--color-accent);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.85rem;
+		margin: 0 0 0.75rem;
+	}
+
+	.hero h1 {
+		font-size: clamp(2.5rem, 6vw, 3.75rem);
+		line-height: 1.1;
+		margin: 0 0 1rem;
+		letter-spacing: -0.03em;
+	}
+
+	.tagline {
+		font-size: 1.15rem;
+		color: var(--color-muted);
+		max-width: 36rem;
+		margin: 0 0 2rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75rem 1.25rem;
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.button.primary {
+		background: var(--color-accent);
+		color: white;
+	}
+
+	.button.primary:hover {
+		background: var(--color-accent-hover);
+		color: white;
+		text-decoration: none;
+	}
+
+	.button.secondary {
+		background: var(--color-surface);
+		color: var(--color-text);
+		border: 1px solid var(--color-border);
+	}
+
+	.button.secondary:hover {
+		border-color: var(--color-accent);
+		color: var(--color-accent);
+		text-decoration: none;
+	}
+
+	.hero-image img {
+		width: min(100%, 360px);
+		margin-inline: auto;
+		border-radius: 50%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		box-shadow: var(--shadow);
+	}
+
+	.about {
+		background: var(--color-surface);
+	}
+
+	.about-content {
+		max-width: 42rem;
+	}
+
+	.about-content p {
+		color: var(--color-muted);
+		margin: 0 0 1rem;
+	}
+
+	.about-content p:last-child {
+		margin-bottom: 0;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.skill-group {
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		padding: 1.5rem;
+	}
+
+	.skill-group h3 {
+		margin: 0 0 1rem;
+		font-size: 1rem;
+	}
+
+	.skill-group ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.skill-group li {
+		background: var(--color-bg);
+		padding: 0.35rem 0.7rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+	}
+
+	.contact {
+		background: var(--color-surface);
+	}
+
+	.contact-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.contact-list a {
+		display: inline-flex;
+		padding: 0.75rem 1.25rem;
+		border: 1px solid var(--color-border);
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		background: var(--color-bg);
+	}
+
+	.contact-list a:hover {
+		border-color: var(--color-accent);
+		text-decoration: none;
+	}
+
+	.footer {
+		padding: 2rem 1.5rem;
+		border-top: 1px solid var(--color-border);
+		color: var(--color-muted);
+		text-align: center;
+	}
+
+	.footer p {
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hero-grid {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		.hero-actions {
+			justify-content: center;
+		}
+	}
+</style>
