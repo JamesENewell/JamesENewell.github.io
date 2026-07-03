@@ -3,7 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import site from '../data/site.json';
-import projects from '../data/projects.json';
+import projectData from '../data/projects.json';
+
+const { groups, projects } = projectData;
 ---
 
 <BaseLayout title={`${site.name} — ${site.title}`} description={site.tagline}>
@@ -44,16 +46,22 @@ import projects from '../data/projects.json';
 		<section class="section projects" id="projects">
 			<div class="container">
 				<h2 class="section-title">Projects</h2>
-				<p class="section-subtitle">
-					Selected work from my development journey, from browser games to full-stack applications.
-				</p>
-				<div class="projects-list">
-					{
-						projects.map((project, index) => (
-							<ProjectCard {...project} reversed={index % 2 === 1} />
-						))
-					}
-				</div>
+				{
+					groups.map((group) => {
+						const groupProjects = projects.filter((p) => p.group === group.id);
+						return (
+							<div class="project-group">
+								<h3 class="group-title">{group.label}</h3>
+								<p class="group-description">{group.description}</p>
+								<div class="projects-list">
+									{groupProjects.map((project, index) => (
+										<ProjectCard {...project} reversed={index % 2 === 1} />
+									))}
+								</div>
+							</div>
+						);
+					})
+				}
 			</div>
 		</section>
 
@@ -192,7 +200,7 @@ import projects from '../data/projects.json';
 	}
 
 	.about-content {
-		max-width: 42rem;
+		max-width: 100%;
 	}
 
 	.about-content p {
@@ -202,6 +210,27 @@ import projects from '../data/projects.json';
 
 	.about-content p:last-child {
 		margin-bottom: 0;
+	}
+
+	.project-group {
+		margin-bottom: 3rem;
+	}
+
+	.project-group:last-child {
+		margin-bottom: 0;
+	}
+
+	.group-title {
+		font-size: 1.35rem;
+		font-weight: 600;
+		margin: 0 0 0.5rem;
+		color: var(--color-text);
+	}
+
+	.group-description {
+		color: var(--color-muted);
+		margin: 0 0 1.5rem;
+		font-size: 0.95rem;
 	}
 
 	.skills-grid {

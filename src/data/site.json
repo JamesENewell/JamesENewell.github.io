@@ -1,24 +1,28 @@
 {
 	"name": "James Edward Newell",
-	"title": "Web Developer",
-	"tagline": "Building thoughtful web experiences with clean code and clear design.",
+	"title": "Front-end Developer",
+	"tagline": "Building responsive, scalable web applications with React, TypeScript, and modern front-end tooling.",
 	"profileImage": "/images/profile.jpg",
 	"bio": [
-		"I am a web developer with a background in education and a long-standing passion for building on the web. After years as a swimming teacher, I completed General Assembly's Web Development Immersive and have been growing my skills across the full stack ever since.",
-		"What drew me to development is the same thing that kept me in teaching: breaking down complex problems, refining solutions, and helping people achieve something tangible. I enjoy working in collaborative teams, shipping reliable software, and continuously learning as the industry evolves."
+		"I'm a front-end developer currently working as a Frontend Engineer at TheGateWorldwide in London, where I lead client website redesigns, integrate with CMS platforms, and ship production-ready work across WordPress, Umbraco, and Drupal. My path into tech started as a self-taught coder and grew through roles at Sky Creative Agency and Creative CX, building everything from animated web ads to A/B testing implementations in React.",
+		"Before development, I ran my own swim school. With a background in mathematics, science, and business leadership that still shapes how I work today. With clear communication, strong organisation, and a focus on outcomes in cross-functional teams. I thrive in fast-paced environments, keep learning modern technologies, and care about building user experiences that are polished, accessible, and built to scale."
 	],
 	"skills": [
 		{
-			"category": "Languages",
-			"items": ["HTML", "CSS", "JavaScript", "TypeScript"]
+			"category": "Frontend",
+			"items": ["HTML", "CSS/SASS", "JavaScript", "React", "Vue", "TypeScript"]
 		},
 		{
-			"category": "Frameworks & Libraries",
-			"items": ["React", "Node.js", "Express", "Astro"]
+			"category": "Backend & CMS",
+			"items": ["Node.js", "PHP", ".NET", "WordPress", "Umbraco", "Drupal"]
 		},
 		{
-			"category": "Tools & Platforms",
-			"items": ["Git", "GitHub", "MongoDB", "npm", "VS Code"]
+			"category": "Cloud & DevOps",
+			"items": ["AWS", "Azure"]
+		},
+		{
+			"category": "Tools & Workflow",
+			"items": ["Jira", "Trello", "Figma", "Adobe XD", "Photoshop", "BrowserStack", "LambdaTest"]
 		}
 	],
 	"contact": [

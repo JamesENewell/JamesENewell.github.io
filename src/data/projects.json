@@ -1,38 +1,51 @@
-[
-	{
-		"title": "Minesweeper",
-		"summary": "A browser-based recreation of the classic Minesweeper game, built with vanilla JavaScript.",
-		"tech": ["HTML5", "CSS", "JavaScript", "jQuery"],
-		"repo": "https://github.com/JamesENewell/project-1-wdi",
-		"demo": null,
-		"image": "/images/minesweeper.jpg",
-		"imageAlt": "Minesweeper game screenshot"
-	},
-	{
-		"title": "PubReviewer",
-		"summary": "Full-stack pub review application with user accounts, letting visitors rate and discover local pubs.",
-		"tech": ["HTML5", "CSS", "JavaScript", "MongoDB", "Mongoose", "Express"],
-		"repo": "https://github.com/JamesENewell/project-2-wdi",
-		"demo": null,
-		"image": "/images/pub-reviewer.jpg",
-		"imageAlt": "PubReviewer application screenshot"
-	},
-	{
-		"title": "Plan Your Night",
-		"summary": "Group MEAN-stack project for planning nights out, integrating Google Places and Skiddle APIs.",
-		"tech": ["AngularJS", "Express", "Node.js", "MongoDB", "JWT", "Bulma"],
-		"repo": "https://github.com/JamesENewell/project-3-wdi",
-		"demo": null,
-		"image": "/images/plan-your-night.gif",
-		"imageAlt": "Plan Your Night application demo"
-	},
-	{
-		"title": "Developers Code Shop",
-		"summary": "Final bootcamp MERN-stack e-commerce project for developer merchandise, with authentication and testing.",
-		"tech": ["React", "Express", "Node.js", "MongoDB", "JWT", "Mocha", "Chai"],
-		"repo": "https://github.com/JamesENewell/project-4-wdi",
-		"demo": null,
-		"image": "/images/code-shop.jpg",
-		"imageAlt": "Developers Code Shop application screenshot"
-	}
-]
+{
+	"groups": [
+		{
+			"id": "bootcamp",
+			"label": "Where It Started",
+			"description": "Selected work from my development journey, from browser games to full-stack applications. These projects were built during the General Assembly Web Development Immersive, where I got my start in web development."
+		}
+	],
+	"projects": [
+		{
+			"title": "Minesweeper",
+			"summary": "A browser-based recreation of the classic Minesweeper game, built with vanilla JavaScript.",
+			"tech": ["HTML5", "CSS", "JavaScript", "jQuery"],
+			"repo": "https://github.com/JamesENewell/project-1-wdi",
+			"demo": null,
+			"image": "/images/minesweeper.jpg",
+			"imageAlt": "Minesweeper game screenshot",
+			"group": "bootcamp"
+		},
+		{
+			"title": "PubReviewer",
+			"summary": "Full-stack pub review application with user accounts, letting visitors rate and discover local pubs.",
+			"tech": ["HTML5", "CSS", "JavaScript", "MongoDB", "Mongoose", "Express"],
+			"repo": "https://github.com/JamesENewell/project-2-wdi",
+			"demo": null,
+			"image": "/images/pub-reviewer.jpg",
+			"imageAlt": "PubReviewer application screenshot",
+			"group": "bootcamp"
+		},
+		{
+			"title": "Plan Your Night",
+			"summary": "Group MEAN-stack project for planning nights out, integrating Google Places and Skiddle APIs.",
+			"tech": ["AngularJS", "Express", "Node.js", "MongoDB", "JWT", "Bulma"],
+			"repo": "https://github.com/JamesENewell/project-3-wdi",
+			"demo": null,
+			"image": "/images/plan-your-night.gif",
+			"imageAlt": "Plan Your Night application demo",
+			"group": "bootcamp"
+		},
+		{
+			"title": "Developers Code Shop",
+			"summary": "Final bootcamp MERN-stack e-commerce project for developer merchandise, with authentication and testing.",
+			"tech": ["React", "Express", "Node.js", "MongoDB", "JWT", "Mocha", "Chai"],
+			"repo": "https://github.com/JamesENewell/project-4-wdi",
+			"demo": null,
+			"image": "/images/code-shop.jpg",
+			"imageAlt": "Developers Code Shop application screenshot",
+			"group": "bootcamp"
+		}
+	]
+}
